@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "caa42962-dab5-46b0-a87b-27312323c1ae",
+		"name": "PeopleAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29367212"
+	},
+	"item": [
+		{
+			"name": "Get all people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get person by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people?first_name=Maksym&last_name=Fil&email=filmaksim02@gmail.com&phone_number=+17891564561453&password=zxxccvdfvedfwertg",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "Maksym"
+						},
+						{
+							"key": "last_name",
+							"value": "Fil"
+						},
+						{
+							"key": "email",
+							"value": "filmaksim02@gmail.com"
+						},
+						{
+							"key": "phone_number",
+							"value": "+17891564561453"
+						},
+						{
+							"key": "password",
+							"value": "zxxccvdfvedfwertg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete person by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Full update existing person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people/4?first_name=Updated name&last_name=Updated last name&email=New email&phone_number=New phone&password=sdgsdg",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"4"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "Updated name"
+						},
+						{
+							"key": "last_name",
+							"value": "Updated last name"
+						},
+						{
+							"key": "email",
+							"value": "New email"
+						},
+						{
+							"key": "phone_number",
+							"value": "New phone"
+						},
+						{
+							"key": "password",
+							"value": "sdgsdg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password By ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/people/2?new_password=sdfsdxcv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"people",
+						"2"
+					],
+					"query": [
+						{
+							"key": "new_password",
+							"value": "sdfsdxcv"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
