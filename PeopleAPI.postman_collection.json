@@ -58,8 +58,38 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Maksym",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Fil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "filmaksim02@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "+17891564561453",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "zxxccvdfvedfwertg",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/people?first_name=Maksym&last_name=Fil&email=filmaksim02@gmail.com&phone_number=+17891564561453&password=zxxccvdfvedfwertg",
+					"raw": "http://127.0.0.1:8000/api/people",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -71,28 +101,6 @@
 					"path": [
 						"api",
 						"people"
-					],
-					"query": [
-						{
-							"key": "first_name",
-							"value": "Maksym"
-						},
-						{
-							"key": "last_name",
-							"value": "Fil"
-						},
-						{
-							"key": "email",
-							"value": "filmaksim02@gmail.com"
-						},
-						{
-							"key": "phone_number",
-							"value": "+17891564561453"
-						},
-						{
-							"key": "password",
-							"value": "zxxccvdfvedfwertg"
-						}
 					]
 				}
 			},
@@ -103,8 +111,12 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/people/11",
+					"raw": "http://127.0.0.1:8000/api/people/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -116,7 +128,7 @@
 					"path": [
 						"api",
 						"people",
-						"11"
+						"3"
 					]
 				}
 			},
@@ -127,8 +139,17 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 10,\r\n        \"first_name\": \"Albert\",\r\n        \"last_name\": \"Welch\",\r\n        \"email\": \"pararar57@example.com\",\r\n        \"phone_number\": \"+88888\",\r\n        \"password\": \"aboba\",\r\n        \"created_at\": \"2023-08-28T09:38:33.000000Z\",\r\n        \"updated_at\": \"2023-08-28T09:38:33.000000Z\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/people/4?first_name=Updated name&last_name=Updated last name&email=New email&phone_number=New phone&password=sdgsdg",
+					"raw": "http://127.0.0.1:8000/api/people/10",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -140,29 +161,7 @@
 					"path": [
 						"api",
 						"people",
-						"4"
-					],
-					"query": [
-						{
-							"key": "first_name",
-							"value": "Updated name"
-						},
-						{
-							"key": "last_name",
-							"value": "Updated last name"
-						},
-						{
-							"key": "email",
-							"value": "New email"
-						},
-						{
-							"key": "phone_number",
-							"value": "New phone"
-						},
-						{
-							"key": "password",
-							"value": "sdgsdg"
-						}
+						"10"
 					]
 				}
 			},
@@ -173,8 +172,18 @@
 			"request": {
 				"method": "PATCH",
 				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_password",
+							"value": "sdfsdxcv",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/people/2?new_password=sdfsdxcv",
+					"raw": "http://127.0.0.1:8000/api/people/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -187,12 +196,6 @@
 						"api",
 						"people",
 						"2"
-					],
-					"query": [
-						{
-							"key": "new_password",
-							"value": "sdfsdxcv"
-						}
 					]
 				}
 			},

@@ -9,3 +9,15 @@ The User Management System is an API that allows you to perform actions on users
  - Delete a user (DELETE method)
 
 For simplicity of testing the API, a json file with a collection of requests in the Postman is loaded
+
+ ### How to start project
+1. Change .env.example to .env and set database name as you like.
+2. Set a database scheme and fill database 
+```sh
+php artisan migrate
+php artisan db:seed --class=PeopleSeeder
+```
+3. Start the project
+```sh
+php artisan serve
+```
